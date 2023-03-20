@@ -1,1 +1,64 @@
 just a sample text !!!
+
+
+LENOVO@DESKTOP-EKTBRQ9 MINGW64 /e/intern/Github (master)
+$ git init
+Reinitialized existing Git repository in E:/intern/Github/.git/
+
+LENOVO@DESKTOP-EKTBRQ9 MINGW64 /e/intern/Github (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   note.txt
+
+
+LENOVO@DESKTOP-EKTBRQ9 MINGW64 /e/intern/Github (master)
+$ git add note.txt
+
+LENOVO@DESKTOP-EKTBRQ9 MINGW64 /e/intern/Github (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   note.txt
+
+
+LENOVO@DESKTOP-EKTBRQ9 MINGW64 /e/intern/Github (master)
+$ git commit -m "second commit"
+[master (root-commit) 37f3ebd] second commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 note.txt
+
+LENOVO@DESKTOP-EKTBRQ9 MINGW64 /e/intern/Github (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+LENOVO@DESKTOP-EKTBRQ9 MINGW64 /e/intern/Github (master)
+$ git remote add origin https://github.com/Vinaykumaralam/sample.git
+error: remote origin already exists.
+
+LENOVO@DESKTOP-EKTBRQ9 MINGW64 /e/intern/Github (master)
+$ git remote -v
+origin  https://github.com/Vinaykumaralam/sample.git (fetch)
+origin  https://github.com/Vinaykumaralam/sample.git (push)
+
+LENOVO@DESKTOP-EKTBRQ9 MINGW64 /e/intern/Github (master)
+$ git push -f origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 236 bytes | 236.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Vinaykumaralam/sample/pull/new/master
+remote:
+To https://github.com/Vinaykumaralam/sample.git
+ * [new branch]      master -> master
